@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float jumpPower = 5f;
+    public float jumpPower = 5f;
     [SerializeField] private float bounce = 5f;
     [SerializeField] private float Speed = 5f;
     [SerializeField] private TMP_Text CountDownText;
 
-    private Rigidbody Rigidbodyrb;
+    public Rigidbody Rigidbodyrb;
     private Animator animator;
     private bool isJumping;
     private bool isJumperPower;
